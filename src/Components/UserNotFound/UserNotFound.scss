@@ -1,0 +1,17 @@
+.user-not-found {
+  color: rgba(128, 128, 128, 1);
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin-top: 46px;
+    max-width: 210px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+  }
+}

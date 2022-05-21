@@ -1,0 +1,21 @@
+.initial-page {
+  color: rgba(128, 128, 128, 1);
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  i {
+    width: 65px;
+    height: 65px;
+  }
+  p {
+    margin-top: 46px;
+    max-width: 210px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+  }
+}
