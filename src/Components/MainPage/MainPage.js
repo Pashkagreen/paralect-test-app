@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './MainPage.scss'
 import UserInfo from "./UserInfo";
 import UserRepos from "./UserRepos";

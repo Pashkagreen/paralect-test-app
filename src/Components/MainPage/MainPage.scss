@@ -7,7 +7,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   &-info {
     width: 22%;
     height: 100%;
@@ -33,6 +33,10 @@
   &-repos {
     width: 70%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .avatar {
@@ -154,6 +158,18 @@
   .current-page {
     border: 2px solid gray;
     font-weight: 700;
+  }
+}
+.empty-repo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: rgba(128, 128, 128, 1);
+
+  p {
+    font-size: 26px;
   }
 }
 

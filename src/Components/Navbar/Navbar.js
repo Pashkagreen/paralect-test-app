@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Logo from  "../../Images/cat.svg";
 import './Navbar.scss'
 import SearchForm from "../SearchForm/SearchForm";

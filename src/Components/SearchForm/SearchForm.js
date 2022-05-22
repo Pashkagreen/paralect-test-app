@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import './SearchForm.scss'
 import {fetchRepos, fetchUsers} from "../../store/asyncActions/fetchData";
-import {setCurrentPage, setUsername} from "../../store/reposReducer";
+import {clearRepos, setCurrentPage} from "../../store/reposReducer";
 
 const SearchForm = () => {
     const dispatch = useDispatch()
@@ -11,6 +11,7 @@ const SearchForm = () => {
 
     const submitHandler = (e) => {
         e.preventDefault()
+        dispatch(clearRepos())
         dispatch(setCurrentPage(1))
         dispatch(fetchRepos(value, 4, currentPage))
         dispatch(fetchUsers(value))
